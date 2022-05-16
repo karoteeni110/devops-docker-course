@@ -1,0 +1,4 @@
+docker run -d --rm -it devopsdockeruh/simple-web-service:ubuntu
+docker exec focused_haslett tail -f ./text.log
+
+You can find the source code here: https://github.com/docker-hy

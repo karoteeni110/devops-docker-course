@@ -1,0 +1,4 @@
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS     NAMES
+cb9e1d8eafce   nginx     "/docker-entrypoint.…"   5 minutes ago   Up 5 minutes   80/tcp    ecstatic_shirley
+REPOSITORY   TAG       IMAGE ID       CREATED      SIZE
+nginx        latest    7425d3a7c478   5 days ago   142MB
