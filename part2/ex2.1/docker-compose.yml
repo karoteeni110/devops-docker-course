@@ -1,8 +1,7 @@
 services:
 
   web-service:
-    image: devopsdockeruh/simple-web-service
-    build: .
+    image: devopsdockeruh/simple-web-service:ubuntu
     volumes: 
       - ./text.log:/usr/src/app/text.log
 
