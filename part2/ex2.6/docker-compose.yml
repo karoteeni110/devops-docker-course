@@ -1,0 +1,27 @@
+services:
+
+  backend:
+    build: 
+      context: .
+      dockerfile: Dockerfile.backend 
+    ports:
+      - 8080:8080
+
+  redis:
+    image: redis
+    command: "redis-server --save 60 1 --loglevel warning"
+    restart: unless-stopped
+
+  postgres:
+    image: postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_PASSWORD: postgres
+
+  frontend:
+    build: 
+      context: .
+      dockerfile: Dockerfile.frontend 
+    ports: 
+      - 5000:5000
+
