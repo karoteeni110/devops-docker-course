@@ -1,0 +1,11 @@
+services:
+  pyspark-notebook:
+    build: .
+    environment:
+      - PYSPARK_SUBMIT_ARGS=--packages "graphframes:graphframes:0.8.2-spark3.2-s_2.12" pyspark-shell
+    ports:
+      - 8888:8888
+    volumes:
+      - .:/home/jovyan/work
+
+
