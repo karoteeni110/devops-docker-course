@@ -1,0 +1,19 @@
+FROM golang:1.16
+
+EXPOSE 8080
+
+WORKDIR /usr/src/app
+
+COPY material-applications/example-backend .
+
+ENV REQUEST_ORIGIN="http://localhost"
+
+ENV REDIS_HOST="redis"
+
+ENV POSTGRES_HOST="postgres"
+
+ENV PATH=$PATH:/usr/local/go/bin
+ 
+RUN go build
+
+CMD ./server 
