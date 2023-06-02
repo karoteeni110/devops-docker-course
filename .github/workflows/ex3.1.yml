@@ -3,6 +3,7 @@ name: Release NodeJS app
 on:
   push:
     branches: [ "main" ]
+    paths: ["part3/express-app"]
 
 jobs:
   build:
