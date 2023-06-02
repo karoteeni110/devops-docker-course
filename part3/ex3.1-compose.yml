@@ -1,0 +1,17 @@
+services:
+
+  express-app:
+    build:
+      context: ./express-app
+    image: carotene110/dockermooc-express-app
+    ports:
+      - 8080:8080
+
+  watchtower:
+    image: containrrr/watchtower
+    environment:
+      - WATCHTOWER_POLL_INTERVAL=10 # Poll every 10 seconds
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+      - $HOME/.docker/config.json:/config.json
+    container_name: watchtower
