@@ -27,5 +27,23 @@ After:
 ```
 REPOSITORY      TAG       IMAGE ID       CREATED              SIZE
 ex36-backend    latest    d12440b259e6   About a minute ago   25.4MB
-ex35-frontend   latest    277c55f60195   4 minutes ago        599MB
+ex36-frontend   latest    277c55f60195   4 minutes ago        599MB
+```
+
+## Exercise 3.6
+
+Before:
+
+```
+REPOSITORY      TAG       IMAGE ID       CREATED              SIZE
+ex36-backend    latest    d12440b259e6   About a minute ago   25.4MB
+ex36-frontend   latest    277c55f60195   4 minutes ago        599MB
+```
+
+After:
+
+```
+REPOSITORY      TAG       IMAGE ID       CREATED          SIZE
+ex37-frontend   latest    c229e12107b3   57 seconds ago   407MB
+ex37-backend    latest    5bb74aeb97df   14 minutes ago   25.4MB
 ```
