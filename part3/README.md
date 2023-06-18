@@ -18,19 +18,19 @@ Before optimization:
 
 ```
 REPOSITORY      TAG       IMAGE ID       CREATED        SIZE
-ex36-frontend   latest    696d5a2ddba4   27 hours ago   602MB
-ex36-backend    latest    d2d346568b88   28 hours ago   1.07GB
+ex35-frontend   latest    fc27fb78524d   36 minutes ago   611MB
+ex35-backend    latest    9a92f96a1681   36 minutes ago         1.07GB
 ```
 
 After:
 
 ```
 REPOSITORY      TAG       IMAGE ID       CREATED              SIZE
-ex36-backend    latest    d12440b259e6   About a minute ago   25.4MB
-ex36-frontend   latest    277c55f60195   4 minutes ago        599MB
+ex36-frontend   latest    45dac98fea37   36 minutes ago       609MB
+ex36-backend    latest    66c557098ef1   12 days ago         1.07GB
 ```
 
-## Exercise 3.6
+## Exercise 3.7
 
 Before:
 

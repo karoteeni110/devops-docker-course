@@ -1,4 +1,9 @@
-FROM golang:1.16 AS build-env
+FROM golang:1.16
+
+# Non-root user
+RUN addgroup appgroup && adduser appuser && adduser appuser appgroup
+
+USER appuser
 
 WORKDIR /usr/src/app
 
@@ -11,15 +16,6 @@ ENV PATH=$PATH:/usr/local/go/bin
 RUN go build
 
 # Start app
-FROM alpine
-
-#RUN addgroup appgroup && adduser appuser && adduser appuser appgroup
-
-USER appuser
-
-WORKDIR /usr/src/app
-
-COPY --from=build-env /usr/src/app/server ./server
 
 EXPOSE 8080
 
