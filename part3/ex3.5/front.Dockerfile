@@ -26,6 +26,6 @@ EXPOSE 5000
 
 ENV REACT_APP_BACKEND_URL="http://localhost:8080"
 
-RUN npm i serve  
+RUN npm i serve && npm run build
 
 CMD npx serve -s -l 5000 build
